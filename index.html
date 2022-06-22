@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="fcontainer">
+            <label for="fenInput">FEN:</label>
+            <input type="text" id="fenInput" name="input">
+            <button id="enterInput">ENTER</button>
+        </div>
+        
+       
+      
+        
+        <div id="center_container">
+            <div id="bottom_buttons">
+                <button id="takemove" class="button_class"></button>
+                <button id="perftTest">perft</button>
+                <input type="range" min="1" max="7" value="1" class="slider" id="perftDepthSlider">
+                
+                <button id="ai_move">ai move</button>
+                
+            </div>
+        
+            <div id="button_grid_container">
+                <div id="button_grid"></div>
+            </div>
+
+            
+            <div  id="settings">
+                
+                <button id="start_game" class="side_element" >start game</button>
+                <button id="reset_board" class="side_element">reset_board</button>
+              
+                <br>
+
+                <div id="promotion_container">
+                    
+                    <select id="promotion_select" name="promotion">
+                        <option value="knight">knight</option>
+                        <option value="bishop">bishop</option>
+                        <option value="rook">rook</option>
+                        <option value="queen">queen</option>
+                    </select>
+                    <label for="promotion">promotion piece</label>
+
+                </div>
+                
+                <div>
+                    <select id="ai_color_select" name="ai_col">
+                        <option value="white">white</option>
+                        <option value="black" selected="true">black</option>
+                       
+                    </select>
+                    <label for="ai_col">AI</label>
+                    
+                </div>
+
+                <br>
+
+
+                <div>
+                    <input type="number" id="search_time" name="ai_time" value="1.0" min="0.1" max="10.0" step="0.1">
+                    <label for="ai_time">seconds</label>
+                    <input type="number" id="search_depth" name="ai_depth" value="10" min="1" max="64" step="1">
+                    <label for="ai_depth">depth</label>
+
+                      <br>
+                     <input type="checkbox"  name="checkbox" id="checkbox">
+                     <label for="checkbox">turn board</label>
+                </div>
+            </div>
+
+
+           
+        </div>
+       
+       
+    </div>
+    
+    <script src="definitions.js"></script>
+    <script src="board.js"></script>
+    <script src="webworker.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
