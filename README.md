@@ -9,7 +9,7 @@
 - no ui freeze during the search;
 
 # ChessEngine JS
-
+link to play: https://omerbilget.github.io/JS-Chess-Engine-with-Gui/
 ![](chessImage.JPG)
 
 
