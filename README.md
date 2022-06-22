@@ -10,7 +10,7 @@
 
 # ChessEngine JS
 
-![]()
+![](chessImage.JPG)
 
 
 
